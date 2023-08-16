@@ -10,10 +10,8 @@ services:
       - "8080:8080" # Gateway
     volumes:
       - ./ipfs-data:/data/ipfs
-      - ./ipfs-staging:/staging
     restart: always
     command: "daemon --migrate=true"
 
 volumes:
   ipfs-data:
-  ipfs-staging:
